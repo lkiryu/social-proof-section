@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+body{
+    font-family: "League Spartan", sans-serif;
+    font-size: 16px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../images/bg-pattern-bottom-desktop.svg), url(../images/bg-pattern-top-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 100%, 0 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.info{
+    width: 440px;
+}
+
+.info .info-title{
+    font-size: 55px;
+    color: hsl(300, 43%, 22%);
+    margin-bottom: 20px;
+}
+
+.info .info-description{
+    font-size: 18px;
+    line-height: 20px;
+    color: hsl(303, 10%, 53%);
+    font-weight: 500;
+}
+
+.reviews{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 560px;
+}
+
+.reviews li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(300, 24%, 96%);
+    padding: 20px 40px;
+    border-radius: 10px;
+    width: 460px;
+    margin-bottom: 15px;
+}
+
+.reviews li p{
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+
+.reviews li:first-child{
+    align-self: flex-start;
+}
+
+.reviews li:last-child{
+    align-self: flex-end;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 280px;
+}
+
+.card{
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    padding: 40px 30px;
+    width: 350px;
+    height: 240px;
+}
+
+.card:first-child{
+    align-self: flex-start;
+}
+
+.card:last-child{
+    align-self: flex-end;
+}
+
+.card .profile{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile img{
+    border-radius: 50%;
+    width: 50px;
+    margin-right: 20px;
+}
+
+.profile-info .username{
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.profile-info .verified{
+    color: hsl(333, 80%, 67%);
+    font-weight: 500;
+}
+
+.card .card-description{
+    color: hsl(300, 24%, 96%);
+    line-height: 21px;
+    font-size: 16px;
+}
+
+header, .cards{
+    width: 58%;
+}
